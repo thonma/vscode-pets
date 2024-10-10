@@ -1,3 +1,82 @@
+# VS Code Pets プルート追加版
+
+- [VS Code Pets プルート追加版](#vs-code-pets-プルート追加版)
+  - [開発環境構築](#開発環境構築)
+    - [Aseprite __(有料)__](#aseprite-有料)
+    - [犬の素材 __(有料)__](#犬の素材-有料)
+    - [VSCode](#vscode)
+    - [ソースコード](#ソースコード)
+  - [ビルド](#ビルド)
+  - [備考](#備考)
+- [VS Code Pets](#vs-code-pets)
+  - [Installation](#installation)
+  - [Using VS Code Pets](#using-vs-code-pets)
+  - [Translation](#translation)
+  - [Credits](#credits)
+  - [Thank you](#thank-you)
+
+## 開発環境構築
+
+<details>
+
+<summary>gif を作る必要がある場合</summary>
+
+### Aseprite __(有料)__
+- Win / Mac
+    - https://www.aseprite.org/
+    - 2024/10/10 時点で __$19.99 USD = 2,980円__
+- Steam
+    - https://store.steampowered.com/app/431730/Aseprite/?l=japanese
+    - 2024/10/10 時点で __2,050円__
+- 備考
+    - 機能的にはすべて同じ
+    - 試用版はファイル出力ができない
+    - __8フレームの gif が作れれば別のソフトでも OK__
+
+### 犬の素材 __(有料)__
+- NVPH Studio
+    - https://nvph-studio.itch.io/dog-animation-4-different-dogs
+    - 2024/10/10 時点で __$1.00 USD = 150円__
+- 備考
+    - 6つ の gif が 1つ のスプライトになっているのでファイルを分割する必要がある
+    - __gif をゼロから作るなら不要__
+
+</details>
+
+### VSCode
+- VSCode拡張をインストール
+    - ESLint
+    - Prettier
+
+### ソースコード
+```bash
+$ npm i
+```
+
+## ビルド
+```bash
+# VSIX を作成
+$ npx vsce package
+```
+
+## 備考
+- 猫の画像は使えません
+    - 理由は `media\README.md` に書いてあります
+
+---
+---
+---
+---
+
+<!-- ここから下は変更不可!! -->
+<!-- ここから下は変更不可!! -->
+<!-- ここから下は変更不可!! -->
+<!-- ここから下は変更不可!! -->
+<!-- ここから下は変更不可!! -->
+<!-- ここから下は変更不可!! -->
+<!-- ここから下は変更不可!! -->
+<!-- ここから下は変更不可!! -->
+
 <div align='center'>
 
 # VS Code Pets
