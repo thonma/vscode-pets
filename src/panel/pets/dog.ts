@@ -29,11 +29,11 @@ export class Dog extends BasePetType {
             },
             {
                 state: States.walkRight,
-                possibleNextStates: [States.walkLeft, States.runLeft],
+                possibleNextStates: [States.lie, States.walkLeft, States.runLeft],
             },
             {
                 state: States.runRight,
-                possibleNextStates: [States.walkLeft, States.runLeft],
+                possibleNextStates: [States.lie, States.walkLeft, States.runLeft],
             },
             {
                 state: States.walkLeft,
@@ -60,6 +60,7 @@ export class Dog extends BasePetType {
             {
                 state: States.idleWithBall,
                 possibleNextStates: [
+                    States.lie,
                     States.walkRight,
                     States.walkLeft,
                     States.runLeft,
