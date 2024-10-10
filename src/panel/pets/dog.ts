@@ -5,6 +5,7 @@ import { States } from '../states';
 export class Dog extends BasePetType {
     label = 'dog';
     static possibleColors = [
+        PetColor.pluto,
         PetColor.black,
         PetColor.brown,
         PetColor.white,

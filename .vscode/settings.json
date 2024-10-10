@@ -1,7 +1,9 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     "files.exclude": {
-        "out": false // set this to true to hide the "out" folder with the compiled JS files
+        "out": false, // set this to true to hide the "out" folder with the compiled JS files
+        "media/{cat,chicken,clippy,cockatiel,crab,deno,fox,horse,mod,rat,rocky,rubber-duck,snail,snake,totoro,turtle,zappy}": true,
+        "src/panel/pets/{cat,chicken,clippy,cockatiel,crab,deno,fox,horse,mod,rat,rocky,rubberduck,snail,snake,totoro,turtle,zappy}.ts": true,
     },
     "search.exclude": {
         "out": true // set this to false to include "out" folder in search results

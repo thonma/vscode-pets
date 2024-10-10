@@ -18,6 +18,7 @@ export const enum PetColor {
     paintbrown = 'paint brown',
     magical = 'magical',
     warrior = 'warrior',
+    pluto = 'pluto',
     null = 'null',
 }
 
@@ -88,12 +89,11 @@ export class WebviewMessage {
 }
 
 export const ALL_PETS = [
-    PetType.cat,
+    PetType.dog,
     PetType.chicken,
     PetType.clippy,
     PetType.cockatiel,
     PetType.crab,
-    PetType.dog,
     PetType.deno,
     PetType.fox,
     PetType.horse,
@@ -108,6 +108,7 @@ export const ALL_PETS = [
     PetType.zappy,
 ];
 export const ALL_COLORS = [
+    PetColor.pluto,
     PetColor.black,
     PetColor.brown,
     PetColor.lightbrown,
