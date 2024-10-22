@@ -1,6 +1,6 @@
 import { PetColor } from '../../common/types';
 import { BasePetType } from '../basepettype';
-import { States } from '../states';
+import { States, resolveState } from '../states';
 
 export class Dog extends BasePetType {
     label = 'dog';
@@ -74,6 +74,23 @@ export class Dog extends BasePetType {
     }
     get hello(): string {
         return ` Every dog has its day - and today is woof day! Today I just want to bark. Take me on a walk`;
+    }
+    swipe() {
+        if (this.currentStateEnum === States.swipe) {
+            return;
+        }
+        this.holdState = this.currentState;
+        this.holdStateEnum = this.currentStateEnum;
+        this.currentStateEnum = States.swipe;
+        this.currentState = resolveState(this.currentStateEnum, this);
+        const reactions = [
+            '💕',
+            '🍕',
+            '🍖',
+            '🍺',
+            '👋',
+        ];
+        this.showSpeechBubble(reactions[Math.floor(Math.random() * reactions.length)]);
     }
 }
 
